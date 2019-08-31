@@ -43,6 +43,10 @@ zplugin light zdharma/fast-syntax-highlighting
 zplugin ice make'!'
 zplugin light sei40kr/zsh-fast-alias-tips
 
+zplugin ice wait 2 lucid
+zplugin light hcgraf/zsh-sudo
+
+
 export NVM_DIR=$HOME/.nvm
 zplugin ice wait'[[ -n ${ZLAST_COMMANDS[(r)nv*|vi*|npm|no*]} ]]' lucid
 zplugin light lukechilds/zsh-nvm
