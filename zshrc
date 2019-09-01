@@ -34,11 +34,8 @@ zplugin light zsh-users/zsh-completions
 zplugin ice wait lucid
 zplugin light skywind3000/z.lua
 
-zplugin ice wait lucid
+zplugin ice wait'1' atload'_zsh_autosuggest_start' lucid
 zplugin light zsh-users/zsh-autosuggestions
-
-zplugin ice wait atinit"zpcompinit" lucid
-zplugin light zdharma/fast-syntax-highlighting
 
 zplugin ice make'!'
 zplugin light sei40kr/zsh-fast-alias-tips
@@ -46,6 +43,14 @@ zplugin light sei40kr/zsh-fast-alias-tips
 zplugin ice wait 2 lucid
 zplugin light hcgraf/zsh-sudo
 
+zplugin ice as"program" pick"bin/git-dsf"
+zplugin light zdharma/zsh-diff-so-fancy
+
+zplugin ice wait"2" lucid as"program" pick"$ZPFX/bin/git-*" src"etc/git-extras-completion.zsh"  make"PREFIX=$ZPFX" nocompile
+zplugin light tj/git-extras
+
+zplugin ice wait atinit"zpcompinit" lucid
+zplugin light zdharma/fast-syntax-highlighting
 
 export NVM_DIR=$HOME/.nvm
 zplugin ice wait'[[ -n ${ZLAST_COMMANDS[(r)nv*|vi*|npm|no*]} ]]' lucid
