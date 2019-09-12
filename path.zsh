@@ -6,7 +6,7 @@ export PATH="$GOPATH/bin:$PATH"
 export PATH="/opt/anaconda/bin:$PATH"
 
 #pyenv
-export PATH="/home/fengkx/.pyenv/bin:$PATH"
+export PATH="$HOME/.pyenv/bin:$PATH"
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 
