@@ -74,3 +74,6 @@ key_info=(
   'Right'        "$terminfo[kcuf1]"
   'BackTab'      "$terminfo[kcbt]"
 )
+
+# bash like comment
+setopt interactivecomments
