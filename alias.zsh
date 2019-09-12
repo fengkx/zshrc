@@ -11,4 +11,4 @@ alias vim=nvim
 #git root
 alias gitr='cd "$(git rev-parse --show-toplevel)"'
 
-
+alias px='proxychains4 -q '
